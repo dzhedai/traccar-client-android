@@ -4,13 +4,14 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "org.traccar.client"
+        applicationId "com.android.application"
         buildConfigField "boolean", "HIDDEN_APP", "false"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 62
         versionName '6.1'
     }
+
 
     lintOptions {
         checkReleaseBuilds false
@@ -34,11 +35,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.android.material:material:1.1.0-alpha10'
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
     implementation 'androidx.preference:preference:1.1.0'
     testImplementation 'junit:junit:4.12'
-    testImplementation 'org.robolectric:robolectric:4.1'
-    googleImplementation 'com.google.firebase:firebase-core:17.2.0'
+    testImplementation 'org.robolectric:robolectric:4.2.1'
+    googleImplementation 'com.google.firebase:firebase-core:17.2.1'
     googleImplementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
     googleImplementation "com.google.android.gms:play-services-location:17.0.0"
 }
